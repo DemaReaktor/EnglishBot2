@@ -8,8 +8,6 @@ with open("jsonFiles/lectures.json", 'r', encoding="utf-8") as file:
 
 class Lectures:
     def __init__(self, lecture: int or None = None):
-        if not isinstance(lecture, int) and not lecture:
-            raise TypeError('lecture should have type "str" or be None')
         self.name = data[lecture]["name"]
         self.text = data[lecture]["text"]
         self.image = data[lecture]["image"]
