@@ -11,8 +11,6 @@ class Lectures:
         self.name = data[lecture]["name"]
         self.text = data[lecture]["text"]
         self.image = data[lecture]["image"]
-        self.audio = None
-        self.test = "test"
         self.index = int(lecture)
         self.keyboard = InlineKeyboardMarkup()
         self.keyboard.add(InlineKeyboardButton(text='Розпочати', callback_data='test'))
